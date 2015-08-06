@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-08-06T03:33:45Z</date>
+    <date>2015-08-06T03:47:43Z</date>
     <groups>
         <group>
             <name>Clients</name>
@@ -54,6 +54,21 @@
                     <name>BigBlueButton</name>
                 </application>
             </applications>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+        <template>
+            <template>Client Node</template>
+            <name>Client Node</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications/>
             <items/>
             <discovery_rules/>
             <macros/>
@@ -2195,6 +2210,185 @@
             <screens/>
         </template>
         <template>
+            <template>Ping Only</template>
+            <name>Ping Only</name>
+            <groups>
+                <group>
+                    <name>Clients</name>
+                </group>
+                <group>
+                    <name>Discovered hosts</name>
+                </group>
+                <group>
+                    <name>Hypervisors</name>
+                </group>
+                <group>
+                    <name>Linux servers</name>
+                </group>
+                <group>
+                    <name>ret</name>
+                </group>
+                <group>
+                    <name>Routers</name>
+                </group>
+                <group>
+                    <name>sco</name>
+                </group>
+                <group>
+                    <name>Sectors</name>
+                </group>
+                <group>
+                    <name>Templates</name>
+                </group>
+                <group>
+                    <name>Virtual machines</name>
+                </group>
+                <group>
+                    <name>Wireless-Infrastructure</name>
+                </group>
+                <group>
+                    <name>Zabbix servers</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Ping</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Ping</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmpping[]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Ping</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Ping Loss</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmppingloss[]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Ping</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Ping Time</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmppingsec[]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Ping</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+        <template>
             <template>Slack</template>
             <name>Slack</name>
             <groups>
@@ -3068,6 +3262,25 @@
             </templates>
             <screens/>
         </template>
+        <template>
+            <template>tik-edge</template>
+            <name>Mikrotik Edge Router</name>
+            <groups>
+                <group>
+                    <name>Routers</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Internet</name>
+                </application>
+            </applications>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
     </templates>
     <triggers>
         <trigger>
@@ -3151,6 +3364,26 @@
             <dependencies/>
         </trigger>
         <trigger>
+            <expression>{Ping Only:icmppingsec[].avg(#10)}&gt;80</expression>
+            <name>High latency</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description>Average latency for the last 10 pings &gt; 80 ms</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Ping Only:icmpping[].avg(5m)}=0</expression>
+            <name>Host is unreachable for 5 minutes</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Host is unreachable for 5 minutes!</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
             <expression>{Mikrotik UPS:1.3.6.1.2.1.33.1.3.3.1.3.1.min(3)}&gt;144</expression>
             <name>Line voltage is above 144 VAC</name>
             <url/>
@@ -3177,6 +3410,16 @@
             <status>0</status>
             <priority>4</priority>
             <description>Within 1V of edge of voltage range!</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Ping Only:icmppingloss[].avg(30m)}&gt;15</expression>
+            <name>Ping loss &gt; 15%</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>The average for the last 30 minutes of ping loss values is higher than 15%!</description>
             <type>0</type>
             <dependencies/>
         </trigger>
@@ -3420,6 +3663,38 @@
                     <item>
                         <host>Mikrotik Device</host>
                         <key>mikrotik.used.memory</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Ping time</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C80000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Ping Only</host>
+                        <key>icmppingsec[]</key>
                     </item>
                 </graph_item>
             </graph_items>
